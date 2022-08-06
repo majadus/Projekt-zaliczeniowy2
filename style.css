@@ -1,0 +1,272 @@
+
+html {
+    scroll-behavior:smooth;
+    font-weight: 700;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif; 
+      }
+      
+      .container {
+      width: 960px;
+      margin: 0 auto;
+      }
+      
+      nav {
+      background-color: #4E4E4E;
+      }
+      
+      nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      }
+      
+      nav a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #F1F1F1;
+      margin-left: 30px;
+      }
+      
+      .my-company {
+      color: #FFFFFF;
+      font-size: 18px;
+      }
+      
+      .links {
+      display: block;
+      }
+      
+      .kontakt {
+      cursor: not-allowed;
+      }
+  
+      .entrance {
+      height: 100vh;
+      background-image: url(http://ahscribbles.com/wp-content/uploads/2019/12/forest-547363_1920.jpg);
+      background-position: center;
+      background-size: cover;
+      }
+      
+      .entrance-shadow {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      }
+      
+      .entrance h1, .entrance h3 {
+      color: #FFFFFF;
+      font-weight: 700;
+      }
+      
+      .entrance h1 {
+      font-size: 36px;
+      }
+      
+      .entrance h3 {
+      font-size: 18px;
+      line-height: 8.5
+      }
+      
+      .offer-button {
+      padding: 10px 50px;
+      border: 3px solid white;
+      background: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      }
+      
+      .offer-button:hover{
+      background: white;
+      transition: 1s;
+      color: black;
+      }
+      
+      .our-specialists {
+      padding: 50px 0;
+      background-color: #F1F1F1;
+      }
+      
+      .our-specialists h1 {
+      margin-bottom: 50px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #152D41;
+      }
+      
+      .about-employee {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      font-size: 18px;
+      text-align: justify;
+      }
+      
+      .about-employee h3 {
+      margin-bottom: 15px;
+      font-weight: bold;
+      }
+      
+      .circle1 {
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      margin-inline: 50px;
+      border-radius: 50%;
+      background-image: url('https://www.skbiznesu.pl/wp-content/uploads/2020/09/szkolenia_dla_kobiet-300x300.jpeg');
+      background-position: center;
+      }
+  
+      .circle2 {
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+      margin-inline: 50px;
+      border-radius: 50%;
+      background-image: url('https://exbis.pl/wp-content/uploads/JL_09_www-300x300.jpg');
+      background-position: top;
+      }
+  
+  
+      .about-employee {
+      flex-direction: row;
+      text-align: left;
+      }
+      
+      .about-employee:nth-of-type(even) {
+      flex-direction: row-reverse;
+      text-align: right;
+      }
+      
+      
+      .offers {
+        position: absolute;
+        width: 100%;
+        padding: 50px 0;
+        background-color: #405D78;
+      }
+      
+      .offers h1 {
+      margin-bottom: 50px;
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      }
+      
+      .offers-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+      }
+      
+      .offers-container-box {
+      width: 200px;
+      height: 200px;
+      margin-right: 2.2em;
+      margin-bottom: 2.2em;
+      background-color: #F1F1F1;
+      }
+  
+  
+      .offers-container {
+      width: 768px;
+      font-size: 24px;
+      line-height: 8;
+      position:center;
+      text-align:center;
+      align-items:center;
+      display: flex;
+      }
+  
+      .offers-container-box:hover {
+        transform: scale(1.05);
+        transition-duration: 0.5s;
+      }
+     
+      .small-circle {
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        background-color: #E07A64;
+        margin: -10px;
+        margin-top: -200px;
+      }
+      
+      .new {
+      font-size: 18px;
+      margin: -143px;
+      }
+  
+      .nav-links {
+      display: initial;
+      }
+      
+      .rights {
+      font-size: 18px;
+      }
+  
+     svg {
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+     }
+  
+    
+      html {
+      scroll-behavior: smooth;
+      }
+     
+  
+      @media screen and (max-width: 768px){
+         
+        div.links{
+          visibility: hidden;
+        }
+        
+        .about-employee{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: justify;
+          }
+          
+          .about-employee:nth-of-type(even){
+            flex-direction: column;
+            text-align: center;
+            }
+  
+          .circle2, .circle1{
+            margin-bottom: 20px;
+          }
+  
+          .our-specialists  h1{
+            text-align: center;
+          }
+  
+        .offers{
+          width: 100%;
+          background-color: #405D78;
+        }
+  
+        .offers-container-box{
+          width: 200px;
+        }
+  
+        #oferta{
+          width: 200px;
+        }
+        .offers-container{
+          width: 200px;
+        }
+      }
+  
