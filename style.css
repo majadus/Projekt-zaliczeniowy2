@@ -147,7 +147,6 @@ html {
       
       
       .offers {
-        position: absolute;
         width: 100%;
         padding: 50px 0;
         background-color: #405D78;
@@ -161,28 +160,29 @@ html {
       }
       
       .offers-container {
-      display: flex;
       flex-wrap: wrap;
-      width: 90%;
       margin: 0 auto;
+      gap: 30px;
       }
       
       .offers-container-box {
       width: 200px;
       height: 200px;
-      margin-right: 2.2em;
-      margin-bottom: 2.2em;
       background-color: #F1F1F1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       }
   
   
       .offers-container {
       width: 768px;
       font-size: 24px;
-      line-height: 8;
-      position:center;
       text-align:center;
       align-items:center;
+      justify-content: center;
       display: flex;
       }
   
@@ -196,16 +196,16 @@ html {
         width: 22px;
         border-radius: 50%;
         background-color: #E07A64;
-        margin: -10px;
-        margin-top: -200px;
+        position: absolute;
+        top: -11px;
+        left: -11px;
       }
       
       .new {
       font-size: 18px;
-      margin: -143px;
       }
   
-      .nav-links {
+      footer {
       display: initial;
       }
       
