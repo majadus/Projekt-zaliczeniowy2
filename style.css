@@ -17,7 +17,7 @@ html {
       background-color: #4E4E4E;
       }
       
-      nav .container {
+      nav .container, footer .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -28,7 +28,6 @@ html {
       font-size: 18px;
       text-decoration: none;
       color: #F1F1F1;
-      margin-left: 30px;
       }
       
       .my-company {
@@ -40,7 +39,11 @@ html {
       display: block;
       }
       
-      .kontakt {
+      .navlink {
+        margin-left: 20px;
+      }
+
+      .contact {
       cursor: not-allowed;
       }
   
@@ -80,6 +83,7 @@ html {
       color: white;
       font-size: 18px;
       font-weight: bold;
+      transition: 1s;
       }
       
       .offer-button:hover{
@@ -91,6 +95,10 @@ html {
       .our-specialists {
       padding: 50px 0;
       background-color: #F1F1F1;
+      }
+
+      .our-specialists .container {
+        width: 96%;
       }
       
       .our-specialists h1 {
@@ -174,23 +182,33 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      transition-duration: 0.5s;
       }
   
   
       .offers-container {
-      width: 768px;
+      width: auto;
       font-size: 24px;
       text-align:center;
       align-items:center;
       justify-content: center;
       display: flex;
       }
+
+      @media screen and (min-width: 900px) {
+        .offers-container {
+          width: 768px;
+
+        }
+      }
   
+      
+      @media screen and (min-width: 1024px) {
       .offers-container-box:hover {
         transform: scale(1.05);
-        transition-duration: 0.5s;
       }
-     
+    }
+    
       .small-circle {
         height: 22px;
         width: 22px;
@@ -206,17 +224,27 @@ html {
       }
   
       footer {
-      display: initial;
-      }
+       background-color: #4E4E4E;
+       }
       
-      .rights {
+       @media screen and (max-width: 550px) {
+        footer .container {
+          flex-direction: column;
+          height: auto;
+          padding-bottom: 10px;
+          padding-top: 10px;
+        }
+       }
+
+      .copyrights {
       font-size: 18px;
+      color: #F1F1F1;
       }
   
-     svg {
-      height: 30px;
-      width: 30px;
+     .icons {
+      font-size: 30px;
       margin-right: 10px;
+      color: #F1F1F1;
      }
   
     
